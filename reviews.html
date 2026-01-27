@@ -1,0 +1,1121 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Отзывы | Кукольный театр «Весёлый Маппет»</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <div class="logo-icon">
+                        <i class="fas fa-mask"></i>
+                    </div>
+                    <div class="logo-text">
+                        <h1>Весёлый Маппет</h1>
+                        <p>Кукольный театр</p>
+                    </div>
+                </a>
+            </div>
+
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Главная</a></li>
+                    <li><a href="repertoire.html" class="nav-link">Репертуар</a></li>
+                    <li><a href="actors.html" class="nav-link">Актёры</a></li>
+                    <li><a href="gallery.html" class="nav-link">Фото</a></li>
+                    <li><a href="reviews.html" class="nav-link active">Отзывы</a></li>
+                    <li><a href="contacts.html" class="nav-link">Контакты</a></li>
+                </ul>
+
+                <div class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+
+            <div class="mobile-nav">
+                <ul class="mobile-nav-list">
+                    <li><a href="index.html" class="mobile-nav-link">Главная</a></li>
+                    <li><a href="repertoire.html" class="mobile-nav-link">Репертуар</a></li>
+                    <li><a href="actors.html" class="mobile-nav-link">Актёры</a></li>
+                    <li><a href="gallery.html" class="mobile-nav-link">Фото</a></li>
+                    <li><a href="reviews.html" class="mobile-nav-link active">Отзывы</a></li>
+                    <li><a href="contacts.html" class="mobile-nav-link">Контакты</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- Хлебные крошки -->
+    <section class="breadcrumbs">
+        <div class="container">
+            <nav class="breadcrumbs-nav">
+                <a href="index.html">Главная</a>
+                <span class="separator">/</span>
+                <span class="current">Отзывы</span>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Основной контент страницы -->
+    <main class="reviews-page">
+        <div class="container">
+            <h1 class="page-title">Отзывы зрителей</h1>
+            <p class="page-subtitle">Что говорят наши зрители о спектаклях и театре</p>
+
+            <!-- Общая статистика -->
+            <div class="reviews-stats">
+                <div class="stats-card">
+                    <div class="stats-number">4.8</div>
+                    <div class="stats-info">
+                        <div class="stars-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p>Средняя оценка</p>
+                    </div>
+                </div>
+                <div class="stats-card">
+                    <div class="stats-number">127</div>
+                    <div class="stats-info">
+                        <i class="fas fa-comment-alt stats-icon"></i>
+                        <p>Всего отзывов</p>
+                    </div>
+                </div>
+                <div class="stats-card">
+                    <div class="stats-number">94%</div>
+                    <div class="stats-info">
+                        <i class="fas fa-thumbs-up stats-icon"></i>
+                        <p>Рекомендуют театр</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Фильтры по спектаклям -->
+            <div class="reviews-filters">
+                <button class="review-filter active" data-filter="all">Все отзывы</button>
+                <button class="review-filter" data-filter="gusi">Гуси-лебеди</button>
+                <button class="review-filter" data-filter="kolobok">Колобок</button>
+                <button class="review-filter" data-filter="teremok">Теремок</button>
+                <button class="review-filter" data-filter="masha">Маша и Медведь</button>
+                <button class="review-filter" data-filter="5stars">Только 5 звёзд</button>
+            </div>
+
+            <!-- Сортировка -->
+            <div class="reviews-sort">
+                <span>Сортировать по:</span>
+                <select id="sortReviews">
+                    <option value="newest">Сначала новые</option>
+                    <option value="oldest">Сначала старые</option>
+                    <option value="highest">Высокий рейтинг</option>
+                    <option value="lowest">Низкий рейтинг</option>
+                </select>
+            </div>
+
+            <!-- Список отзывов -->
+            <div class="reviews-list">
+                <!-- Отзыв 1 -->
+                <div class="review-card" data-performance="gusi" data-rating="5" data-date="2025-03-15">
+                    <div class="review-header">
+                        <div class="reviewer-info">
+                            <div class="reviewer-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="reviewer-details">
+                                <h3 class="reviewer-name">Мария Иванова</h3>
+                                <p class="reviewer-meta">мама 5-летнего Саши</p>
+                                <div class="review-performance">
+                                    <i class="fas fa-theater-masks"></i>
+                                    <span>Спектакль «Гуси-лебеди»</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="review-date">15 марта 2025</span>
+                        </div>
+                    </div>
+                    <div class="review-content">
+                        <p>Водим сына на спектакли уже третий год. Каждый раз — море эмоций! Куклы как живые, актёры замечательные. Особенно понравились «Гуси-лебеди» — сын даже не заметил, как пролетело время. После спектакля ещё неделю играл в спасение братца от Бабы-Яги. Спасибо за прекрасные эмоции!</p>
+                    </div>
+                    <div class="review-helpful">
+                        <span class="helpful-text">Отзыв был полезен?</span>
+                        <button class="helpful-btn">
+                            <i class="fas fa-thumbs-up"></i> Да (24)
+                        </button>
+                        <button class="not-helpful-btn">
+                            <i class="fas fa-thumbs-down"></i> Нет (1)
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Отзыв 2 -->
+                <div class="review-card" data-performance="kolobok" data-rating="5" data-date="2025-03-10">
+                    <div class="review-header">
+                        <div class="reviewer-info">
+                            <div class="reviewer-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="reviewer-details">
+                                <h3 class="reviewer-name">Алексей Петров</h3>
+                                <p class="reviewer-meta">папа 4-летней Ани</p>
+                                <div class="review-performance">
+                                    <i class="fas fa-theater-masks"></i>
+                                    <span>Спектакль «Колобок»</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="review-date">10 марта 2025</span>
+                        </div>
+                    </div>
+                    <div class="review-content">
+                        <p>Театр просто волшебный! Дочь в восторге от кукол, особенно от Колобка. После спектакля ещё неделю играла в кукольный театр дома. Спектакль «Колобок» — это не просто сказка, а настоящее музыкальное представление с песнями и танцами. Дети не просто смотрят, а участвуют в действии. Очень рекомендую!</p>
+                    </div>
+                    <div class="review-helpful">
+                        <span class="helpful-text">Отзыв был полезен?</span>
+                        <button class="helpful-btn">
+                            <i class="fas fa-thumbs-up"></i> Да (18)
+                        </button>
+                        <button class="not-helpful-btn">
+                            <i class="fas fa-thumbs-down"></i> Нет (0)
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Отзыв 3 -->
+                <div class="review-card" data-performance="teremok" data-rating="4" data-date="2025-03-05">
+                    <div class="review-header">
+                        <div class="reviewer-info">
+                            <div class="reviewer-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="reviewer-details">
+                                <h3 class="reviewer-name">Елена Соколова</h3>
+                                <p class="reviewer-meta">бабушка 6-летних близнецов</p>
+                                <div class="review-performance">
+                                    <i class="fas fa-theater-masks"></i>
+                                    <span>Спектакль «Теремок»</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <span class="review-date">5 марта 2025</span>
+                        </div>
+                    </div>
+                    <div class="review-content">
+                        <p>Вожу внуков в этот театр уже два года. Спектакли добрые, поучительные, без лишней компьютерной графики. Дети смотрят с открытыми ртами. Особенно нравится, что после спектакля можно сфотографироваться с куклами. «Теремок» — замечательный спектакль о дружбе и взаимовыручке. Единственное пожелание — сделать спектакль немного короче, детям тяжело сидеть 55 минут.</p>
+                    </div>
+                    <div class="review-helpful">
+                        <span class="helpful-text">Отзыв был полезен?</span>
+                        <button class="helpful-btn">
+                            <i class="fas fa-thumbs-up"></i> Да (12)
+                        </button>
+                        <button class="not-helpful-btn">
+                            <i class="fas fa-thumbs-down"></i> Нет (2)
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Отзыв 4 -->
+                <div class="review-card" data-performance="masha" data-rating="5" data-date="2025-02-28">
+                    <div class="review-header">
+                        <div class="reviewer-info">
+                            <div class="reviewer-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="reviewer-details">
+                                <h3 class="reviewer-name">Ольга Козлова</h3>
+                                <p class="reviewer-meta">мама 3-летней Вероники</p>
+                                <div class="review-performance">
+                                    <i class="fas fa-theater-masks"></i>
+                                    <span>Спектакль «Маша и Медведь»</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="review-date">28 февраля 2025</span>
+                        </div>
+                    </div>
+                    <div class="review-content">
+                        <p>Первый раз были в кукольном театре. Дочка (3 года) сначала боялась, но уже через 10 минут смеялась и хлопала в ладоши. Спектакль «Маша и Медведь» — современная интерпретация, но с сохранением духа сказки. Особенно понравилось, что дети участвуют в действии — помогают Маше, подсказывают. Обязательно придём ещё!</p>
+                    </div>
+                    <div class="review-helpful">
+                        <span class="helpful-text">Отзыв был полезен?</span>
+                        <button class="helpful-btn">
+                            <i class="fas fa-thumbs-up"></i> Да (15)
+                        </button>
+                        <button class="not-helpful-btn">
+                            <i class="fas fa-thumbs-down"></i> Нет (0)
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Отзыв 5 -->
+                <div class="review-card" data-performance="gusi" data-rating="4" data-date="2025-02-20">
+                    <div class="review-header">
+                        <div class="reviewer-info">
+                            <div class="reviewer-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="reviewer-details">
+                                <h3 class="reviewer-name">Дмитрий Новиков</h3>
+                                <p class="reviewer-meta">отец 7-летнего Ильи</p>
+                                <div class="review-performance">
+                                    <i class="fas fa-theater-masks"></i>
+                                    <span>Спектакль «Гуси-лебеди»</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <span class="review-date">20 февраля 2025</span>
+                        </div>
+                    </div>
+                    <div class="review-content">
+                        <p>Сын был в восторге от гусей-лебедей и Бабы-Яги. Куклы действительно как живые, актёры профессиональные. Единственное — немного темновато в зале, детям было сложно рассмотреть некоторые детали. Но в целом впечатление очень положительное. Будем рекомендовать друзьям.</p>
+                    </div>
+                    <div class="review-helpful">
+                        <span class="helpful-text">Отзыв был полезен?</span>
+                        <button class="helpful-btn">
+                            <i class="fas fa-thumbs-up"></i> Да (8)
+                        </button>
+                        <button class="not-helpful-btn">
+                            <i class="fas fa-thumbs-down"></i> Нет (3)
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Кнопка загрузки еще отзывов -->
+            <div class="load-more-reviews">
+                <button class="btn-secondary" id="loadMoreReviews">Показать ещё отзывы</button>
+            </div>
+
+            <!-- Форма добавления отзыва -->
+            <div class="add-review-section">
+                <h2 class="section-title">Оставить отзыв</h2>
+                <p class="section-subtitle">Поделитесь своими впечатлениями о нашем театре</p>
+                
+                <form class="add-review-form" id="reviewForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="reviewName">Ваше имя *</label>
+                            <input type="text" id="reviewName" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="reviewEmail">Ваш email</label>
+                            <input type="email" id="reviewEmail" name="email">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="reviewPerformance">Выберите спектакль *</label>
+                        <select id="reviewPerformance" name="performance" required>
+                            <option value="">-- Выберите спектакль --</option>
+                            <option value="gusi">Гуси-лебеди</option>
+                            <option value="kolobok">Колобок</option>
+                            <option value="teremok">Теремок</option>
+                            <option value="masha">Маша и Медведь</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Ваша оценка *</label>
+                        <div class="rating-stars-input">
+                            <input type="radio" id="star5" name="rating" value="5">
+                            <label for="star5" title="Отлично">
+                                <i class="far fa-star"></i>
+                            </label>
+                            
+                            <input type="radio" id="star4" name="rating" value="4">
+                            <label for="star4" title="Хорошо">
+                                <i class="far fa-star"></i>
+                            </label>
+                            
+                            <input type="radio" id="star3" name="rating" value="3">
+                            <label for="star3" title="Удовлетворительно">
+                                <i class="far fa-star"></i>
+                            </label>
+                            
+                            <input type="radio" id="star2" name="rating" value="2">
+                            <label for="star2" title="Плохо">
+                                <i class="far fa-star"></i>
+                            </label>
+                            
+                            <input type="radio" id="star1" name="rating" value="1">
+                            <label for="star1" title="Ужасно">
+                                <i class="far fa-star"></i>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="reviewTitle">Заголовок отзыва</label>
+                        <input type="text" id="reviewTitle" name="title" placeholder="Например: «Прекрасный спектакль для детей»">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="reviewText">Текст отзыва *</label>
+                        <textarea id="reviewText" name="text" rows="5" required placeholder="Поделитесь своими впечатлениями о спектакле..."></textarea>
+                        <div class="char-counter">
+                            <span id="charCount">0</span> / 1000 символов
+                        </div>
+                    </div>
+                    
+                    <div class="form-group consent">
+                        <input type="checkbox" id="reviewConsent" name="consent" required>
+                        <label for="reviewConsent">Я согласен на обработку моих персональных данных и публикацию отзыва на сайте</label>
+                    </div>
+                    
+                    <button type="submit" class="btn-primary">Отправить отзыв</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-- Подвал сайта -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-mask"></i>
+                    </div>
+                    <div class="logo-text">
+                        <h3>Весёлый Маппет</h3>
+                        <p>Кукольный театр</p>
+                    </div>
+                </div>
+
+                <div class="footer-nav">
+                    <ul class="footer-nav-list">
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="repertoire.html">Репертуар</a></li>
+                        <li><a href="actors.html">Актёры</a></li>
+                        <li><a href="gallery.html">Фото</a></li>
+                        <li><a href="reviews.html">Отзывы</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contacts">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>ул. Театральная, 15, Москва</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+7 (495) 123-45-67</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>info@vesely-mappet.ru</span>
+                    </div>
+                </div>
+
+                <div class="footer-social">
+                    <a href="#" class="social-link"><i class="fab fa-vk"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-telegram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Кукольный театр «Весёлый Маппет». Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    
+    <!-- Стили для страницы отзывов -->
+    <style>
+        .reviews-page {
+            padding: var(--spacing-xl) 0;
+        }
+        
+        .reviews-stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: var(--spacing-lg);
+            margin-bottom: var(--spacing-xl);
+        }
+        
+        @media (max-width: 768px) {
+            .reviews-stats {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        .stats-card {
+            background-color: var(--primary-dark);
+            color: var(--text-light);
+            padding: var(--spacing-lg);
+            border-radius: var(--border-radius-lg);
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 5px 15px var(--shadow-light);
+        }
+        
+        .stats-number {
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--accent-gold);
+            margin-bottom: var(--spacing-sm);
+        }
+        
+        .stars-rating {
+            color: var(--accent-gold);
+            font-size: 1.2rem;
+            margin-bottom: var(--spacing-xs);
+        }
+        
+        .stats-icon {
+            font-size: 2rem;
+            color: var(--accent-gold);
+            margin-bottom: var(--spacing-xs);
+        }
+        
+        .stats-card p {
+            color: var(--text-muted);
+            margin-bottom: 0;
+        }
+        
+        .reviews-filters {
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--spacing-sm);
+            margin-bottom: var(--spacing-lg);
+        }
+        
+        .review-filter {
+            padding: var(--spacing-xs) var(--spacing-md);
+            background-color: var(--gray-light);
+            border: none;
+            border-radius: var(--border-radius-md);
+            cursor: pointer;
+            transition: var(--transition-medium);
+            font-family: 'Roboto', sans-serif;
+            font-weight: 500;
+            font-size: 0.9rem;
+        }
+        
+        .review-filter:hover {
+            background-color: var(--accent-steel);
+            color: var(--text-light);
+        }
+        
+        .review-filter.active {
+            background-color: var(--accent-gold);
+            color: var(--primary-dark);
+        }
+        
+        .reviews-sort {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-sm);
+            margin-bottom: var(--spacing-lg);
+            color: var(--gray-medium);
+        }
+        
+        #sortReviews {
+            padding: var(--spacing-xs) var(--spacing-md);
+            border: 1px solid var(--gray-light);
+            border-radius: var(--border-radius-md);
+            font-family: 'Roboto', sans-serif;
+            background-color: var(--white);
+            cursor: pointer;
+        }
+        
+        .reviews-list {
+            margin-bottom: var(--spacing-xl);
+        }
+        
+        .review-card {
+            background-color: var(--white);
+            border-radius: var(--border-radius-lg);
+            padding: var(--spacing-lg);
+            margin-bottom: var(--spacing-lg);
+            box-shadow: 0 5px 15px var(--shadow-light);
+            border-left: 4px solid var(--accent-gold);
+        }
+        
+        .review-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: var(--spacing-md);
+            flex-wrap: wrap;
+            gap: var(--spacing-md);
+        }
+        
+        .reviewer-info {
+            display: flex;
+            gap: var(--spacing-md);
+            align-items: flex-start;
+        }
+        
+        .reviewer-avatar {
+            width: 60px;
+            height: 60px;
+            background-color: var(--primary-light);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-light);
+            font-size: 1.5rem;
+        }
+        
+        .reviewer-details h3 {
+            font-size: 1.3rem;
+            color: var(--primary-dark);
+            margin-bottom: 5px;
+        }
+        
+        .reviewer-meta {
+            color: var(--gray-medium);
+            font-size: 0.9rem;
+            margin-bottom: var(--spacing-xs);
+        }
+        
+        .review-performance {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-xs);
+            color: var(--accent-burgundy);
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+        
+        .review-rating {
+            text-align: right;
+        }
+        
+        .review-rating .stars {
+            color: var(--accent-gold);
+            margin-bottom: var(--spacing-xs);
+        }
+        
+        .review-date {
+            color: var(--gray-medium);
+            font-size: 0.9rem;
+        }
+        
+        .review-content {
+            margin-bottom: var(--spacing-md);
+            line-height: 1.7;
+        }
+        
+        .review-helpful {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-md);
+            flex-wrap: wrap;
+        }
+        
+        .helpful-text {
+            color: var(--gray-medium);
+            font-size: 0.9rem;
+        }
+        
+        .helpful-btn, .not-helpful-btn {
+            padding: 5px 15px;
+            background-color: var(--gray-light);
+            border: none;
+            border-radius: var(--border-radius-md);
+            cursor: pointer;
+            transition: var(--transition-medium);
+            font-family: 'Roboto', sans-serif;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .helpful-btn:hover {
+            background-color: #4CAF50;
+            color: rgb(68, 63, 63);
+        }
+        
+        .not-helpful-btn:hover {
+            background-color: #f44336;
+            color: rgb(66, 58, 58);
+        }
+        
+        .load-more-reviews {
+            text-align: center;
+            margin-bottom: var(--spacing-xl);
+        }
+        
+        .add-review-section {
+            background-color: var(--primary-light);
+            border-radius: var(--border-radius-lg);
+            padding: var(--spacing-xl);
+            color: var(--text-light);
+        }
+        
+        .add-review-section .section-title {
+            color: var(--text-light);
+            text-align: left;
+            margin-bottom: var(--spacing-sm);
+        }
+        
+        .add-review-section .section-title::after {
+            display: none;
+        }
+        
+        .add-review-section .section-subtitle {
+            text-align: left;
+            color: var(--text-muted);
+            margin-bottom: var(--spacing-lg);
+        }
+        
+        .add-review-form {
+            max-width: 800px;
+        }
+        
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--spacing-lg);
+            margin-bottom: var(--spacing-md);
+        }
+        
+        @media (max-width: 768px) {
+            .form-row {
+                grid-template-columns: 1fr;
+                gap: var(--spacing-md);
+            }
+        }
+        
+        .form-group {
+            margin-bottom: var(--spacing-lg);
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: var(--spacing-xs);
+            font-weight: 500;
+        }
+        
+        .form-group input, .form-group select, .form-group textarea {
+            width: 100%;
+            padding: var(--spacing-sm);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: var(--border-radius-md);
+            background-color: rgba(255, 255, 255, 0.1);
+            color: var(--text-light);
+            font-family: 'Roboto', sans-serif;
+            font-size: 1rem;
+            transition: var(--transition-medium);
+        }
+        
+        .form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+            outline: none;
+            border-color: var(--accent-gold);
+            background-color: rgba(255, 255, 255, 0.15);
+        }
+        
+        .form-group textarea {
+            resize: vertical;
+        }
+        
+        .char-counter {
+            text-align: right;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin-top: 5px;
+        }
+        
+        .rating-stars-input {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: flex-end;
+            margin-top: var(--spacing-xs);
+        }
+        
+        .rating-stars-input input {
+            display: none;
+        }
+        
+        .rating-stars-input label {
+            cursor: pointer;
+            font-size: 2rem;
+            color: var(--gray-medium);
+            margin-right: 5px;
+            transition: var(--transition-medium);
+        }
+        
+        .rating-stars-input label:hover,
+        .rating-stars-input label:hover ~ label,
+        .rating-stars-input input:checked ~ label {
+            color: var(--accent-gold);
+        }
+        
+        .consent {
+            display: flex;
+            align-items: flex-start;
+            gap: var(--spacing-sm);
+        }
+        
+        .consent input {
+            width: auto;
+            margin-top: 5px;
+        }
+        
+        .consent label {
+            margin-bottom: 0;
+            font-size: 0.9rem;
+        }
+        
+        .add-review-form .btn-primary {
+            margin-top: var(--spacing-md);
+        }
+        
+        /* Уведомление об успешной отправке */
+        .review-success {
+            display: none;
+            background-color: rgba(76, 175, 80, 0.1);
+            border: 1px solid #4CAF50;
+            color: #4CAF50;
+            padding: var(--spacing-lg);
+            border-radius: var(--border-radius-md);
+            text-align: center;
+            margin-top: var(--spacing-lg);
+        }
+        
+        .review-success.active {
+            display: block;
+        }
+        
+        .review-success i {
+            font-size: 2rem;
+            margin-bottom: var(--spacing-sm);
+        }
+    </style>
+    
+    <!-- JavaScript для страницы отзывов -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Фильтрация отзывов
+            const reviewFilters = document.querySelectorAll('.review-filter');
+            const reviewCards = document.querySelectorAll('.review-card');
+            const sortSelect = document.getElementById('sortReviews');
+            
+            // Применение фильтров
+            function applyFilters() {
+                const activeFilter = document.querySelector('.review-filter.active');
+                const filterValue = activeFilter.getAttribute('data-filter');
+                const sortValue = sortSelect.value;
+                
+                // Сначала фильтруем
+                let filteredCards = Array.from(reviewCards);
+                
+                if (filterValue !== 'all') {
+                    if (filterValue === '5stars') {
+                        filteredCards = filteredCards.filter(card => {
+                            return card.getAttribute('data-rating') === '5';
+                        });
+                    } else {
+                        filteredCards = filteredCards.filter(card => {
+                            return card.getAttribute('data-performance') === filterValue;
+                        });
+                    }
+                }
+                
+                // Затем сортируем
+                filteredCards.sort((a, b) => {
+                    const dateA = new Date(a.getAttribute('data-date'));
+                    const dateB = new Date(b.getAttribute('data-date'));
+                    const ratingA = parseInt(a.getAttribute('data-rating'));
+                    const ratingB = parseInt(b.getAttribute('data-rating'));
+                    
+                    switch(sortValue) {
+                        case 'newest':
+                            return dateB - dateA;
+                        case 'oldest':
+                            return dateA - dateB;
+                        case 'highest':
+                            return ratingB - ratingA;
+                        case 'lowest':
+                            return ratingA - ratingB;
+                        default:
+                            return 0;
+                    }
+                });
+                
+                // Скрываем все карточки
+                reviewCards.forEach(card => {
+                    card.style.display = 'none';
+                });
+                
+                // Показываем отфильтрованные и отсортированные
+                filteredCards.forEach((card, index) => {
+                    card.style.display = 'block';
+                    // Добавляем небольшую задержку для анимации
+                    setTimeout(() => {
+                        card.style.opacity = '1';
+                        card.style.transform = 'translateY(0)';
+                    }, index * 50);
+                });
+            }
+            
+            // Обработчики для фильтров
+            reviewFilters.forEach(filter => {
+                filter.addEventListener('click', function() {
+                    // Убираем активный класс у всех фильтров
+                    reviewFilters.forEach(f => f.classList.remove('active'));
+                    
+                    // Добавляем активный класс текущему фильтру
+                    this.classList.add('active');
+                    
+                    applyFilters();
+                });
+            });
+            
+            // Обработчик для сортировки
+            sortSelect.addEventListener('change', applyFilters);
+            
+            // Кнопки "Полезно/Не полезно"
+            const helpfulBtns = document.querySelectorAll('.helpful-btn');
+            const notHelpfulBtns = document.querySelectorAll('.not-helpful-btn');
+            
+            helpfulBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    if (!this.classList.contains('voted')) {
+                        const countElement = this.querySelector('span') || this;
+                        let count = parseInt(countElement.textContent.match(/\d+/)[0]);
+                        count++;
+                        countElement.innerHTML = countElement.innerHTML.replace(/\d+/, count);
+                        this.classList.add('voted');
+                        this.style.backgroundColor = '#4CAF50';
+                        this.style.color = 'white';
+                    }
+                });
+            });
+            
+            notHelpfulBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    if (!this.classList.contains('voted')) {
+                        const countElement = this.querySelector('span') || this;
+                        let count = parseInt(countElement.textContent.match(/\d+/)[0]);
+                        count++;
+                        countElement.innerHTML = countElement.innerHTML.replace(/\d+/, count);
+                        this.classList.add('voted');
+                        this.style.backgroundColor = '#f44336';
+                        this.style.color = 'white';
+                    }
+                });
+            });
+            
+            // Форма добавления отзыва
+            const reviewForm = document.getElementById('reviewForm');
+            const reviewText = document.getElementById('reviewText');
+            const charCount = document.getElementById('charCount');
+            
+            // Счётчик символов
+            reviewText.addEventListener('input', function() {
+                const length = this.value.length;
+                charCount.textContent = length;
+                
+                if (length > 1000) {
+                    charCount.style.color = '#f44336';
+                    this.value = this.value.substring(0, 1000);
+                    charCount.textContent = 1000;
+                } else if (length > 800) {
+                    charCount.style.color = '#ff9800';
+                } else {
+                    charCount.style.color = 'var(--text-muted)';
+                }
+            });
+            
+            // Звёзды рейтинга
+            const starInputs = document.querySelectorAll('.rating-stars-input input');
+            const starLabels = document.querySelectorAll('.rating-stars-input label i');
+            
+            starInputs.forEach((input, index) => {
+                input.addEventListener('change', function() {
+                    // Обновляем иконки звёзд
+                    const value = parseInt(this.value);
+                    
+                    starLabels.forEach((label, labelIndex) => {
+                        if (5 - labelIndex <= value) {
+                            label.classList.remove('far');
+                            label.classList.add('fas');
+                        } else {
+                            label.classList.remove('fas');
+                            label.classList.add('far');
+                        }
+                    });
+                });
+            });
+            
+            // Отправка формы
+            reviewForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // Простая валидация
+                const name = document.getElementById('reviewName').value.trim();
+                const performance = document.getElementById('reviewPerformance').value;
+                const rating = document.querySelector('input[name="rating"]:checked');
+                const text = reviewText.value.trim();
+                const consent = document.getElementById('reviewConsent').checked;
+                
+                let isValid = true;
+                let errorMessage = '';
+                
+                if (!name) {
+                    isValid = false;
+                    errorMessage = 'Пожалуйста, введите ваше имя';
+                } else if (!performance) {
+                    isValid = false;
+                    errorMessage = 'Пожалуйста, выберите спектакль';
+                } else if (!rating) {
+                    isValid = false;
+                    errorMessage = 'Пожалуйста, поставьте оценку';
+                } else if (!text) {
+                    isValid = false;
+                    errorMessage = 'Пожалуйста, напишите текст отзыва';
+                } else if (text.length < 10) {
+                    isValid = false;
+                    errorMessage = 'Текст отзыва должен содержать не менее 10 символов';
+                } else if (!consent) {
+                    isValid = false;
+                    errorMessage = 'Необходимо согласие на обработку данных';
+                }
+                
+                if (!isValid) {
+                    alert(errorMessage);
+                    return;
+                }
+                
+                // В реальном сайте здесь будет отправка на сервер
+                // Для примера покажем успешное сообщение
+                const successDiv = document.createElement('div');
+                successDiv.className = 'review-success active';
+                successDiv.innerHTML = `
+                    <i class="fas fa-check-circle"></i>
+                    <h3>Спасибо за ваш отзыв!</h3>
+                    <p>Ваш отзыв успешно отправлен и будет опубликован после модерации.</p>
+                `;
+                
+                reviewForm.parentNode.insertBefore(successDiv, reviewForm.nextSibling);
+                
+                // Скрываем форму
+                reviewForm.style.display = 'none';
+                
+                // Через 5 секунд покажем форму снова (для демо)
+                setTimeout(() => {
+                    successDiv.remove();
+                    reviewForm.style.display = 'block';
+                    reviewForm.reset();
+                    
+                    // Сбросить звёзды
+                    starLabels.forEach(label => {
+                        label.classList.remove('fas');
+                        label.classList.add('far');
+                    });
+                    
+                    charCount.textContent = '0';
+                    charCount.style.color = 'var(--text-muted)';
+                }, 5000);
+            });
+            
+            // Кнопка "Показать ещё"
+            const loadMoreBtn = document.getElementById('loadMoreReviews');
+            if (loadMoreBtn) {
+                loadMoreBtn.addEventListener('click', function() {
+                    // В реальном сайте здесь будет загрузка дополнительных отзывов с сервера
+                    // Для примера просто покажем сообщение
+                    this.textContent = 'Больше отзывов скоро будет!';
+                    this.disabled = true;
+                    this.style.opacity = '0.7';
+                    
+                    setTimeout(() => {
+                        this.textContent = 'Показать ещё отзывы';
+                        this.disabled = false;
+                        this.style.opacity = '1';
+                    }, 3000);
+                });
+            }
+            
+            // Анимация появления отзывов
+            const revealReviews = function() {
+                reviewCards.forEach(card => {
+                    const elementTop = card.getBoundingClientRect().top;
+                    const windowHeight = window.innerHeight;
+                    
+                    if (elementTop < windowHeight - 100 && card.style.display !== 'none') {
+                        card.style.opacity = '1';
+                        card.style.transform = 'translateY(0)';
+                    }
+                });
+            };
+            
+            // Устанавливаем начальные стили для анимации
+            reviewCards.forEach(card => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(30px)';
+                card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+            });
+            
+            // Проверяем при загрузке и при скролле
+            window.addEventListener('load', revealReviews);
+            window.addEventListener('scroll', revealReviews);
+            
+            // Применяем фильтры при загрузке
+            applyFilters();
+        });
+    </script>
+</body>
+</html>
