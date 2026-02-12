@@ -1,0 +1,445 @@
+/* ===== ДОПОЛНИТЕЛЬНАЯ АДАПТАЦИЯ СЕТКИ ===== */
+
+/* Планшеты — 1024px и меньше */
+@media (max-width: 1024px) {
+    .container {
+        max-width: 960px;
+        padding: 0 20px;
+    }
+    
+    .grid-container {
+        gap: 20px;
+    }
+    
+    .col-span-3,
+    .col-span-4,
+    .col-span-5,
+    .col-span-6,
+    .col-span-7,
+    .col-span-8,
+    .col-span-9 {
+        grid-column: span 12;
+    }
+    
+    .hero-slider {
+        height: 500px;
+        min-height: auto;
+        margin-top: 80px;
+    }
+    
+    .slide-title {
+        font-size: 3rem;
+    }
+    
+    .slide-subtitle {
+        font-size: 1.2rem;
+    }
+    
+    .section {
+        padding: 60px 0;
+    }
+    
+    .performances-carousel {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .actors-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .gallery-masonry {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 32px;
+    }
+}
+
+/* Малые планшеты — 900px и меньше */
+@media (max-width: 900px) {
+    .actors-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .gallery-masonry {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .performance-hero {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+    
+    .contacts-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+    
+    .schedule-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .cast-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Мобильные — 768px и меньше */
+@media (max-width: 768px) {
+    .container {
+        max-width: 100%;
+        padding: 0 16px;
+    }
+    
+    .grid-container {
+        gap: 16px;
+    }
+    
+    .col-span-1,
+    .col-span-2,
+    .col-span-3,
+    .col-span-4,
+    .col-span-5,
+    .col-span-6,
+    .col-span-7,
+    .col-span-8,
+    .col-span-9,
+    .col-span-10,
+    .col-span-11,
+    .col-span-12 {
+        grid-column: span 12;
+    }
+    
+    .section {
+        padding: 60px 0;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .section-subtitle {
+        font-size: 1rem;
+        margin-bottom: 32px;
+    }
+    
+    .breadcrumbs {
+        margin-top: 80px;
+        padding: 16px 0;
+    }
+    
+    .hero-slider {
+        margin-top: 80px;
+        height: auto;
+        min-height: 800px;
+    }
+    
+    .slide-content-wrapper {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 40px 0;
+    }
+    
+    .slide-text-content {
+        padding-right: 0;
+        text-align: center;
+    }
+    
+    .slide-buttons {
+        justify-content: center;
+    }
+    
+    .slide-photo-collage {
+        height: 400px;
+        margin-top: 20px;
+    }
+    
+    .slider-arrow {
+        width: 44px;
+        height: 44px;
+        font-size: 1.2rem;
+    }
+    
+    .slider-arrow.prev {
+        left: 20px;
+    }
+    
+    .slider-arrow.next {
+        right: 20px;
+    }
+    
+    .performances-carousel {
+        grid-template-columns: 1fr;
+    }
+    
+    .actors-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .gallery-masonry {
+        grid-template-columns: 1fr;
+    }
+    
+    .gallery-item.large {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+    
+    .reviews-carousel {
+        padding: 0 20px;
+    }
+    
+    .review-card {
+        padding: 24px;
+    }
+    
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+    
+    .reviews-stats {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+    
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+    
+    .schedule-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .cast-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .add-review-section {
+        padding: 32px 24px;
+    }
+    
+    .contact-form-section {
+        padding: 32px 24px;
+    }
+    
+    .accordion-header {
+        padding: 20px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+    
+    .accordion-date {
+        gap: 16px;
+    }
+    
+    .accordion-date .day {
+        font-size: 2.5rem;
+    }
+    
+    .accordion-date .month {
+        font-size: 1.2rem;
+    }
+    
+    .accordion-content {
+        padding: 0 20px;
+    }
+    
+    .accordion-item.active .accordion-content {
+        padding: 0 20px 24px;
+    }
+    
+    .performance-time {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+    
+    .time {
+        margin-right: 0;
+    }
+}
+
+/* Маленькие мобильные — 576px и меньше */
+@media (max-width: 576px) {
+    .hero-slider {
+        min-height: 700px;
+    }
+    
+    .slide-title {
+        font-size: 1.8rem;
+    }
+    
+    .slide-subtitle {
+        font-size: 1rem;
+    }
+    
+    .slide-photo-collage {
+        height: 350px;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+    }
+    
+    .month-filters {
+        gap: 12px;
+    }
+    
+    .month-filter {
+        padding: 8px 16px;
+        font-size: 0.85rem;
+    }
+    
+    .accordion-date .day {
+        font-size: 2.2rem;
+    }
+    
+    .btn {
+        padding: 12px 24px;
+        font-size: 0.85rem;
+    }
+}
+
+/* Очень маленькие — 480px и меньше */
+@media (max-width: 480px) {
+    .container {
+        padding: 0 12px;
+    }
+    
+    .section {
+        padding: 40px 0;
+    }
+    
+    .section-title {
+        font-size: 1.6rem;
+    }
+    
+    .section-subtitle {
+        font-size: 0.95rem;
+    }
+    
+    .hero-slider {
+        min-height: 650px;
+    }
+    
+    .slide-title {
+        font-size: 1.6rem;
+    }
+    
+    .slide-subtitle {
+        font-size: 0.95rem;
+    }
+    
+    .slider-arrow {
+        width: 36px;
+        height: 36px;
+        font-size: 1rem;
+    }
+    
+    .btn {
+        padding: 10px 20px;
+        font-size: 0.8rem;
+    }
+    
+    .card-title {
+        font-size: 1.3rem;
+    }
+    
+    .performance-info h1 {
+        font-size: 2rem;
+    }
+    
+    .accordion-date {
+        flex-wrap: wrap;
+    }
+    
+    .accordion-date .day {
+        font-size: 2rem;
+    }
+    
+    .month-title {
+        font-size: 1.6rem;
+    }
+    
+    .performance-meta {
+        gap: 12px;
+    }
+}
+
+/* Экстремально маленькие — 360px и меньше */
+@media (max-width: 360px) {
+    .slide-title {
+        font-size: 1.4rem;
+    }
+    
+    .slide-subtitle {
+        font-size: 0.9rem;
+    }
+    
+    .section-title {
+        font-size: 1.4rem;
+    }
+    
+    .btn {
+        padding: 8px 16px;
+        font-size: 0.75rem;
+    }
+    
+    .card-content {
+        padding: 16px;
+    }
+    
+    .card-title {
+        font-size: 1.2rem;
+    }
+}
+
+/* Retina дисплеи */
+@media (min-resolution: 192dpi) {
+    .card-image img,
+    .gallery-image img,
+    .actor-card-front .card-image img {
+        image-rendering: crisp-edges;
+    }
+}
+
+/* Touch-устройства — отключаем hover-эффекты */
+@media (hover: none) and (pointer: coarse) {
+    .performance-card:hover,
+    .actor-3d-card:hover .actor-card-inner,
+    .gallery-item:hover .gallery-overlay,
+    .btn:hover,
+    .social-link:hover {
+        transform: none;
+    }
+    
+    .actor-card-inner {
+        transform: none !important;
+    }
+    
+    .performance-card:hover .card-image img {
+        transform: none;
+    }
+}
+
+/* Альбомная ориентация на мобильных */
+@media (max-width: 900px) and (orientation: landscape) {
+    .hero-slider {
+        min-height: 450px;
+        height: 100vh;
+    }
+    
+    .slide-photo-collage {
+        height: 300px;
+    }
+    
+    .photo-main {
+        width: 180px;
+        height: 220px;
+    }
+}

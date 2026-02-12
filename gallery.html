@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фотогалерея | Театр Кукол «Весёлый Маппет»</title>
+    
+    <!-- Шрифты -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;700&family=Raleway:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,500;1,500;1,600&family=Manrope:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- ШАПКА -->
+    <header class="main-header">
+        <div class="container">
+            <div class="header-container">
+                <div class="logo">
+                    <a href="index.html">
+                        <div class="logo-icon">
+                            <i class="fas fa-mask"></i>
+                        </div>
+                        <div class="logo-text">
+                            <h1>Весёлый Маппет</h1>
+                            <p>Театр Кукол</p>
+                        </div>
+                    </a>
+                </div>
+
+                <nav class="main-nav">
+                    <ul class="nav-list">
+                        <li><a href="index.html" class="nav-link">Главная</a></li>
+                        <li><a href="repertoire.html" class="nav-link">Репертуар</a></li>
+                        <li><a href="actors.html" class="nav-link">Актёры</a></li>
+                        <li><a href="gallery.html" class="nav-link active">Фото</a></li>
+                        <li><a href="reviews.html" class="nav-link">Отзывы</a></li>
+                        <li><a href="contacts.html" class="nav-link">Контакты</a></li>
+                    </ul>
+
+                    <div class="mobile-menu-btn">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                </nav>
+            </div>
+            
+            <div class="mobile-nav">
+                <ul class="mobile-nav-list">
+                    <li><a href="index.html" class="mobile-nav-link">Главная</a></li>
+                    <li><a href="repertoire.html" class="mobile-nav-link">Репертуар</a></li>
+                    <li><a href="actors.html" class="mobile-nav-link">Актёры</a></li>
+                    <li><a href="gallery.html" class="mobile-nav-link active">Фото</a></li>
+                    <li><a href="reviews.html" class="mobile-nav-link">Отзывы</a></li>
+                    <li><a href="contacts.html" class="mobile-nav-link">Контакты</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- ХЛЕБНЫЕ КРОШКИ -->
+    <section class="breadcrumbs">
+        <div class="container">
+            <nav class="breadcrumbs-nav">
+                <a href="index.html">Главная</a>
+                <span class="separator">/</span>
+                <span class="current">Фотогалерея</span>
+            </nav>
+        </div>
+    </section>
+
+    <!-- ОСНОВНОЙ КОНТЕНТ -->
+    <section class="section">
+        <div class="container">
+            <h1 class="section-title" style="font-size: 3rem;">Фотогалерея</h1>
+            <p class="section-subtitle">Моменты спектаклей, закулисье и наши волшебные куклы</p>
+            
+            <!-- ФИЛЬТРЫ -->
+            <div class="gallery-filters">
+                <button class="gallery-filter active" data-filter="all">Все</button>
+                <button class="gallery-filter" data-filter="performances">Спектакли</button>
+                <button class="gallery-filter" data-filter="backstage">За кулисами</button>
+                <button class="gallery-filter" data-filter="puppets">Куклы</button>
+                <button class="gallery-filter" data-filter="auditorium">Зал</button>
+            </div>
+            
+            <!-- MASONRY ГАЛЕРЕЯ -->
+            <div class="gallery-masonry">
+                <!-- Спектакли -->
+                <div class="gallery-item" data-category="performances">
+                    <div class="gallery-image">
+                        <img src="image/pred1.jfif" alt="Спектакль Красная Шапочка">
+                    </div>
+                    <div class="gallery-overlay">
+                        <h3>Красная Шапочка"</h3>
+                        <p>Момент встречи с девочки с волком</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item large" data-category="performances">
+                    <div class="gallery-image">
+                        <img src="image/pred2.jfif" alt="Спектакль Красная Шапочка">
+                    </div>
+                    <div class="gallery-overlay">
+                        <h3>Красная Шапочка</h3>
+                        <p>Заполненность зала</p>
+                    </div>
+                </div>
+                <!-- За кулисами -->
+                <div class="gallery-item" data-category="backstage">
+                    <div class="gallery-image">
+                        <img src="image/gallery4.jpg" alt="Подготовка к спектаклю">
+                    </div>
+                    <div class="gallery-overlay">
+                        <h3>Подготовка</h3>
+                        <p>Актёры готовят кукол</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="backstage">
+                    <div class="gallery-image">
+                        <img src="image/gallery5.jpg" alt="Режиссёр на репетиции">
+                    </div>
+                    <div class="gallery-overlay">
+                        <h3>Репетиция</h3>
+                        <p>Руслан Бельский с актёрами</p>
+                    </div>
+                </div>
+                
+                <!-- Куклы -->
+                <div class="gallery-item" data-category="puppets">
+                    <div class="gallery-image">
+                        <img src="image/gallery6.jpg" alt="Куклы Гуси-лебеди">
+                    </div>
+                    <div class="gallery-overlay">
+                        <h3>Куклы</h3>
+                        <p>Персонажи «Гуси-лебеди»</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item large" data-category="puppets">
+                    <div class="gallery-image">
+                        <img src="image/gallery7.jpg" alt="Марионетки">
+                    </div>
+                    <div class="gallery-overlay">
+                        <h3>Марионетки</h3>
+                        <p>Коллекция театра</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="puppets">
+                    <div class="gallery-image">
+                        <img src="image/gallery8.jpg" alt="Кукла Бабы-Яги">
+                    </div>
+                    <div class="gallery-overlay">
+                        <h3>Баба-Яга</h3>
+                        <p>Самая сложная кукла</p>
+                    </div>
+                </div>
+                
+                <!-- Зрительный зал -->
+                <div class="gallery-item" data-category="auditorium">
+                    <div class="gallery-image">
+                        <img src="image/gallery9.jpg" alt="Большая сцена">
+                    </div>
+                    <div class="gallery-overlay">
+                        <h3>Большая сцена</h3>
+                        <p>Зал на 300 мест</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="auditorium">
+                    <div class="gallery-image">
+                        <img src="image/gallery10.jpg" alt="Малая сцена">
+                    </div>
+                    <div class="gallery-overlay">
+                        <h3>Малая сцена</h3>
+                        <p>Для камерных спектаклей</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="performances">
+                    <div class="gallery-image">
+                        <img src="image/gallery11.jpg" alt="Маша и Медведь">
+                    </div>
+                    <div class="gallery-overlay">
+                        <h3>Маша и Медведь</h3>
+                        <p>Интерактив с залом</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- КНОПКА ЗАГРУЗИТЬ ЕЩЁ -->
+            <div style="text-align: center; margin-top: 60px;">
+                <button class="btn btn-outline" id="loadMoreGallery">
+                    Загрузить ещё фото
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ЛАЙТБОКС -->
+    <div class="lightbox-overlay" id="lightbox">
+        <div class="lightbox-container">
+            <button class="lightbox-close" id="lightboxClose">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="lightbox-image" id="lightboxImage">
+                <img src="" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- ПОДВАЛ -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-mask"></i>
+                    </div>
+                    <div>
+                        <h3>Весёлый Маппет</h3>
+                        <p>Театр Кукол</p>
+                    </div>
+                </div>
+                
+                <div class="footer-nav">
+                    <h4 style="color: var(--accent-gold); margin-bottom: 20px;">Навигация</h4>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="repertoire.html">Репертуар</a></li>
+                        <li><a href="actors.html">Актёры</a></li>
+                        <li><a href="gallery.html">Фото</a></li>
+                        <li><a href="reviews.html">Отзывы</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contacts">
+                    <h4 style="color: var(--accent-gold); margin-bottom: 20px;">Контакты</h4>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Проспект Октября, 67/2, Уфа</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+7 (495) 123-45-67</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>info@vesely-mappet.ru</span>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 style="color: var(--accent-gold); margin-bottom: 20px;">Мы в сети</h4>
+                    <div class="footer-social">
+                        <a href="#" class="social-link"><i class="fab fa-vk"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-telegram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Театр Кукол «Весёлый Маппет». Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        // Скрипт для галереи
+        document.addEventListener('DOMContentLoaded', function() {
+            // Фильтры
+            const filters = document.querySelectorAll('.gallery-filter');
+            const items = document.querySelectorAll('.gallery-item');
+            
+            filters.forEach(filter => {
+                filter.addEventListener('click', function() {
+                    filters.forEach(f => f.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    const category = this.dataset.filter;
+                    
+                    items.forEach(item => {
+                        if (category === 'all' || item.dataset.category === category) {
+                            item.style.display = 'block';
+                            setTimeout(() => {
+                                item.style.opacity = '1';
+                                item.style.transform = 'scale(1)';
+                            }, 10);
+                        } else {
+                            item.style.opacity = '0';
+                            item.style.transform = 'scale(0.8)';
+                            setTimeout(() => {
+                                item.style.display = 'none';
+                            }, 300);
+                        }
+                    });
+                });
+            });
+            
+            // Лайтбокс
+            const lightbox = document.getElementById('lightbox');
+            const lightboxClose = document.getElementById('lightboxClose');
+            const lightboxImage = document.querySelector('#lightboxImage img');
+            
+            items.forEach(item => {
+                item.addEventListener('click', function() {
+                    const img = this.querySelector('img');
+                    if (img) {
+                        lightboxImage.src = img.src;
+                        lightbox.classList.add('active');
+                        document.body.style.overflow = 'hidden';
+                    }
+                });
+            });
+            
+            lightboxClose.addEventListener('click', function() {
+                lightbox.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            });
+            
+            lightbox.addEventListener('click', function(e) {
+                if (e.target === lightbox) {
+                    lightbox.classList.remove('active');
+                    document.body.style.overflow = 'auto';
+                }
+            });
+            
+            // Кнопка "Загрузить ещё"
+            const loadMoreBtn = document.getElementById('loadMoreGallery');
+            if (loadMoreBtn) {
+                loadMoreBtn.addEventListener('click', function() {
+                    alert('В реальном проекте здесь будет загрузка дополнительных фотографий с сервера');
+                });
+            }
+        });
+    </script>
+</body>
+</html>

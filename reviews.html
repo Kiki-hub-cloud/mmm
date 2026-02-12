@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Отзывы | Театр Кукол «Весёлый Маппет»</title>
+    
+    <!-- Шрифты -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;700&family=Raleway:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,500;1,500;1,600&family=Manrope:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- ШАПКА -->
+    <header class="main-header">
+        <div class="container">
+            <div class="header-container">
+                <div class="logo">
+                    <a href="index.html">
+                        <div class="logo-icon">
+                            <i class="fas fa-mask"></i>
+                        </div>
+                        <div class="logo-text">
+                            <h1>Весёлый Маппет</h1>
+                            <p>Театр Кукол</p>
+                        </div>
+                    </a>
+                </div>
+
+                <nav class="main-nav">
+                    <ul class="nav-list">
+                        <li><a href="index.html" class="nav-link">Главная</a></li>
+                        <li><a href="repertoire.html" class="nav-link">Репертуар</a></li>
+                        <li><a href="actors.html" class="nav-link">Актёры</a></li>
+                        <li><a href="gallery.html" class="nav-link">Фото</a></li>
+                        <li><a href="reviews.html" class="nav-link active">Отзывы</a></li>
+                        <li><a href="contacts.html" class="nav-link">Контакты</a></li>
+                    </ul>
+
+                    <div class="mobile-menu-btn">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                </nav>
+            </div>
+            
+            <div class="mobile-nav">
+                <ul class="mobile-nav-list">
+                    <li><a href="index.html" class="mobile-nav-link">Главная</a></li>
+                    <li><a href="repertoire.html" class="mobile-nav-link">Репертуар</a></li>
+                    <li><a href="actors.html" class="mobile-nav-link">Актёры</a></li>
+                    <li><a href="gallery.html" class="mobile-nav-link">Фото</a></li>
+                    <li><a href="reviews.html" class="mobile-nav-link active">Отзывы</a></li>
+                    <li><a href="contacts.html" class="mobile-nav-link">Контакты</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- ХЛЕБНЫЕ КРОШКИ -->
+    <section class="breadcrumbs">
+        <div class="container">
+            <nav class="breadcrumbs-nav">
+                <a href="index.html">Главная</a>
+                <span class="separator">/</span>
+                <span class="current">Отзывы</span>
+            </nav>
+        </div>
+    </section>
+
+    <!-- ОСНОВНОЙ КОНТЕНТ -->
+    <section class="section">
+        <div class="container">
+            <h1 class="section-title" style="font-size: 3rem;">Отзывы зрителей</h1>
+            <p class="section-subtitle">Более 150 семей уже поделились своими впечатлениями</p>
+            
+            <!-- СТАТИСТИКА -->
+            <div class="reviews-stats">
+                <div class="stats-card">
+                    <div class="stats-number">4.8</div>
+                    <p>Средняя оценка</p>
+                    <div style="color: var(--accent-gold); margin-top: 12px;">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+                <div class="stats-card">
+                    <div class="stats-number">157</div>
+                    <p>Всего отзывов</p>
+                    <i class="fas fa-comment" style="color: var(--accent-gold); font-size: 2rem; margin-top: 12px;"></i>
+                </div>
+                <div class="stats-card">
+                    <div class="stats-number">96%</div>
+                    <p>Рекомендуют театр</p>
+                    <i class="fas fa-thumbs-up" style="color: var(--accent-gold); font-size: 2rem; margin-top: 12px;"></i>
+                </div>
+            </div>
+            
+            <!-- КАРУСЕЛЬ ОТЗЫВОВ -->
+            <h2 style="font-size: 2rem; margin: 60px 0 32px;">Последние отзывы</h2>
+            
+            <div class="reviews-carousel">
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer">
+                            <div class="reviewer-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="reviewer-info">
+                                <h4>Мария Иванова</h4>
+                                <p>мама 5-летнего Саши</p>
+                            </div>
+                        </div>
+                        <div class="review-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="review-text">«Прекрасный спектакль "Дедуля и Бабуля"! Сын смотрел, затаив дыхание. Особенно понравились гуси-лебеди — такие красивые куклы! После спектакля ещё неделю играл в спасение братца от Бабы-Яги.»</p>
+                    <div class="review-date">15 марта 2025</div>
+                </div>
+                
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer">
+                            <div class="reviewer-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="reviewer-info">
+                                <h4>Алексей Петров</h4>
+                                <p>папа 4-летней Ани</p>
+                            </div>
+                        </div>
+                        <div class="review-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="review-text">«Театр просто волшебный! Дочь в восторге от кукол, особенно от Волка. Спектакль "Красная Шапочка" — это не просто сказка, а настоящее музыкальное представление с песнями и танцами.»</p>
+                    <div class="review-date">10 марта 2025</div>
+                </div>
+                
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer">
+                            <div class="reviewer-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="reviewer-info">
+                                <h4>Елена Соколова</h4>
+                                <p>бабушка близнецов</p>
+                            </div>
+                        </div>
+                        <div class="review-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                    <p class="review-text">«Вожу внуков в этот театр уже два года. Спектакли добрые, поучительные, без лишней компьютерной графики. Дети смотрят с открытыми ртами. "Кот в сапогах" — наш фаворит!»</p>
+                    <div class="review-date">5 марта 2025</div>
+                </div>
+            </div>
+            
+            <!-- ВСЕ ОТЗЫВЫ СПИСКОМ -->
+            <h2 style="font-size: 2rem; margin: 60px 0 32px;">Все отзывы</h2>
+            
+            <div style="display: flex; flex-direction: column; gap: 24px;">
+                <!-- Отзыв 1 -->
+                <div style="background: var(--white); border-radius: var(--radius-lg); padding: 32px; box-shadow: var(--shadow-md);">
+                    <div style="display: flex; justify-content: space-between; margin-bottom: 24px; flex-wrap: wrap; gap: 16px;">
+                        <div style="display: flex; align-items: center; gap: 16px;">
+                            <div style="width: 60px; height: 60px; border-radius: 50%; background: linear-gradient(145deg, var(--accent-gold), var(--accent-gold-dark)); display: flex; align-items: center; justify-content: center; font-size: 1.8rem; color: var(--primary-dark);">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div>
+                                <h4 style="font-size: 1.2rem; margin-bottom: 4px;">Ольга Козлова</h4>
+                                <p style="color: var(--text-gray);">мама 3-летней Вероники</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div style="color: var(--accent-gold); margin-bottom: 8px;">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span style="color: var(--text-gray);">28 февраля 2025</span>
+                        </div>
+                    </div>
+                    <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 16px;">
+                        Первый раз были в кукольном театре. Дочка (3 года) сначала боялась, но уже через 10 минут смеялась и хлопала в ладоши. Спектакль «Маша и Медведь» — современная интерпретация, но с сохранением духа сказки. Особенно понравилось, что дети участвуют в действии — помогают Маше, подсказывают. Обязательно придём ещё!
+                    </p>
+                    <div style="display: flex; gap: 24px; align-items: center;">
+                        <span style="background: rgba(165, 42, 42, 0.1); padding: 6px 16px; border-radius: 30px; color: var(--accent-burgundy); font-size: 0.9rem;">Спектакль: Маша и Медведь</span>
+                    </div>
+                </div>
+                
+                <!-- Отзыв 2 -->
+                <div style="background: var(--white); border-radius: var(--radius-lg); padding: 32px; box-shadow: var(--shadow-md);">
+                    <div style="display: flex; justify-content: space-between; margin-bottom: 24px; flex-wrap: wrap; gap: 16px;">
+                        <div style="display: flex; align-items: center; gap: 16px;">
+                            <div style="width: 60px; height: 60px; border-radius: 50%; background: linear-gradient(145deg, var(--accent-gold), var(--accent-gold-dark)); display: flex; align-items: center; justify-content: center; font-size: 1.8rem; color: var(--primary-dark);">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div>
+                                <h4 style="font-size: 1.2rem; margin-bottom: 4px;">Дмитрий Новиков</h4>
+                                <p style="color: var(--text-gray);">отец 7-летнего Ильи</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div style="color: var(--accent-gold); margin-bottom: 8px;">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <span style="color: var(--text-gray);">20 февраля 2025</span>
+                        </div>
+                    </div>
+                    <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 16px;">
+                        Сын был в восторге от приключений Кота в Сапогах. Куклы действительно как живые, актёры профессиональные. Единственное — немного темновато в зале, детям было сложно рассмотреть некоторые детали. Но в целом впечатление очень положительное. Будем рекомендовать друзьям.
+                    </p>
+                    <div style="display: flex; gap: 24px; align-items: center;">
+                        <span style="background: rgba(165, 42, 42, 0.1); padding: 6px 16px; border-radius: 30px; color: var(--accent-burgundy); font-size: 0.9rem;">Спектакль: Кот в сапогах</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- КНОПКА ЗАГРУЗИТЬ ЕЩЁ -->
+            <div style="text-align: center; margin-top: 48px;">
+                <button class="btn btn-outline" id="loadMoreBtn" style="border-color: var(--primary-dark); color: var(--primary-dark);">
+                    Загрузить ещё отзывы
+                </button>
+            </div>
+            
+            <!-- ФОРМА ДОБАВЛЕНИЯ ОТЗЫВА -->
+            <div class="add-review-section">
+                <h2 class="section-title" style="color: var(--text-light);">Оставить отзыв</h2>
+                <p class="section-subtitle" style="color: var(--text-muted);">Поделитесь впечатлениями о нашем театре</p>
+                
+                <form class="add-review-form" id="reviewForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="reviewName">Ваше имя *</label>
+                            <input type="text" id="reviewName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="reviewEmail">Ваш email</label>
+                            <input type="email" id="reviewEmail">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="reviewPerformance">Выберите спектакль *</label>
+                        <select id="reviewPerformance" required>
+                            <option value="">-- Выберите спектакль --</option>
+                            <option value="dedulya">Дедуля и Бабуля</option>
+                            <option value="krasnaya">Красная Шапочка</option>
+                            <option value="kot">Кот в сапогах</option>
+                            <option value="tri">Три поросенка</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Ваша оценка *</label>
+                        <div class="rating-stars-input">
+                            <input type="radio" id="star5" name="rating" value="5">
+                            <label for="star5"><i class="far fa-star"></i></label>
+                            <input type="radio" id="star4" name="rating" value="4">
+                            <label for="star4"><i class="far fa-star"></i></label>
+                            <input type="radio" id="star3" name="rating" value="3">
+                            <label for="star3"><i class="far fa-star"></i></label>
+                            <input type="radio" id="star2" name="rating" value="2">
+                            <label for="star2"><i class="far fa-star"></i></label>
+                            <input type="radio" id="star1" name="rating" value="1">
+                            <label for="star1"><i class="far fa-star"></i></label>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="reviewText">Текст отзыва *</label>
+                        <textarea id="reviewText" rows="5" required placeholder="Поделитесь своими впечатлениями..."></textarea>
+                    </div>
+                    
+                    <div class="form-group consent">
+                        <input type="checkbox" id="reviewConsent" required style="width: auto;">
+                        <label for="reviewConsent" style="display: inline; color: var(--text-muted);">Я согласен на обработку персональных данных</label>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">Отправить отзыв</button>
+                </form>
+                
+                <div class="contact-success" id="reviewSuccess">
+                    <i class="fas fa-check-circle"></i>
+                    <h3>Спасибо за отзыв!</h3>
+                    <p>Ваш отзыв будет опубликован после проверки модератором.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ПОДВАЛ -->
+    <footer class="main-footer">
+        <!-- Копировать из предыдущих страниц -->
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        // Обработка формы отзыва
+        document.addEventListener('DOMContentLoaded', function() {
+            const reviewForm = document.getElementById('reviewForm');
+            const reviewSuccess = document.getElementById('reviewSuccess');
+            
+            if (reviewForm) {
+                reviewForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    reviewForm.style.display = 'none';
+                    reviewSuccess.classList.add('active');
+                    
+                    setTimeout(() => {
+                        reviewForm.style.display = 'block';
+                        reviewSuccess.classList.remove('active');
+                        reviewForm.reset();
+                    }, 5000);
+                });
+            }
+            
+            // Кнопка "Загрузить ещё"
+            const loadMoreBtn = document.getElementById('loadMoreBtn');
+            if (loadMoreBtn) {
+                loadMoreBtn.addEventListener('click', function() {
+                    alert('В реальном проекте здесь будет загрузка дополнительных отзывов с сервера');
+                });
+            }
+        });
+    </script>
+</body>
+</html>

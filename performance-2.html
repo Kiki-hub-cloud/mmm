@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Красная Шапочка | Театр Кукол «Весёлый Маппет»</title>
+    
+    <!-- Шрифты -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;700&family=Raleway:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,500;1,500;1,600&family=Manrope:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- ===== ШАПКА — ЕДИНАЯ ДЛЯ ВСЕХ СТРАНИЦ ===== -->
+    <!-- ВАЖНО: active класс ДОЛЖЕН оставаться на "Репертуар", потому что это страница спектакля -->
+    <header class="main-header">
+        <div class="container">
+            <div class="header-container">
+                <div class="logo">
+                    <a href="index.html">
+                        <div class="logo-icon">
+                            <i class="fas fa-mask"></i>
+                        </div>
+                        <div class="logo-text">
+                            <h1>Весёлый Маппет</h1>
+                            <p>Театр Кукол</p>
+                        </div>
+                    </a>
+                </div>
+
+                <nav class="main-nav">
+                    <ul class="nav-list">
+                        <li><a href="index.html" class="nav-link">Главная</a></li>
+                        <li><a href="repertoire.html" class="nav-link active">Репертуар</a></li>
+                        <li><a href="actors.html" class="nav-link">Актёры</a></li>
+                        <li><a href="gallery.html" class="nav-link">Фото</a></li>
+                        <li><a href="reviews.html" class="nav-link">Отзывы</a></li>
+                        <li><a href="contacts.html" class="nav-link">Контакты</a></li>
+                    </ul>
+
+                    <div class="mobile-menu-btn">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                </nav>
+            </div>
+            
+            <!-- Мобильная навигация -->
+            <div class="mobile-nav">
+                <ul class="mobile-nav-list">
+                    <li><a href="index.html" class="mobile-nav-link">Главная</a></li>
+                    <li><a href="repertoire.html" class="mobile-nav-link active">Репертуар</a></li>
+                    <li><a href="actors.html" class="mobile-nav-link">Актёры</a></li>
+                    <li><a href="gallery.html" class="mobile-nav-link">Фото</a></li>
+                    <li><a href="reviews.html" class="mobile-nav-link">Отзывы</a></li>
+                    <li><a href="contacts.html" class="mobile-nav-link">Контакты</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- ХЛЕБНЫЕ КРОШКИ -->
+    <section class="breadcrumbs">
+        <div class="container">
+            <nav class="breadcrumbs-nav">
+                <a href="index.html">Главная</a>
+                <span class="separator">/</span>
+                <a href="repertoire.html">Репертуар</a>
+                <span class="separator">/</span>
+                <span class="current">Красная Шапочка</span>
+            </nav>
+        </div>
+    </section>
+
+    <!-- ОСНОВНОЙ КОНТЕНТ -->
+    <main class="performance-detail">
+        <div class="container">
+            <!-- ГЕРОЙ СПЕКТАКЛЯ -->
+            <div class="performance-hero">
+                <div class="performance-poster">
+                    <img src="image/kr.jfif" alt="Красная Шапочка">
+                </div>
+                <div class="performance-info">
+                    <span style="background: var(--accent-burgundy); color: var(--text-light); padding: 8px 20px; border-radius: 30px; font-size: 0.9rem; font-weight: 600; display: inline-block; margin-bottom: 16px;">ПРЕМЬЕРА</span>
+                    <h1>Красная Шапочка</h1>
+                    
+                    <div class="performance-meta-large">
+                        <div class="meta-item">
+                            <i class="fas fa-baby"></i>
+                            <div class="meta-text">
+                                <h4>Возраст</h4>
+                                <p>0+</p>
+                            </div>
+                        </div>
+                        <div class="meta-item">
+                            <i class="fas fa-clock"></i>
+                            <div class="meta-text">
+                                <h4>Длительность</h4>
+                                <p>45 минут</p>
+                            </div>
+                        </div>
+                        <div class="meta-item">
+                            <i class="fas fa-theater-masks"></i>
+                            <div class="meta-text">
+                                <h4>Антракт</h4>
+                                <p>Без антракта</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="performance-description">
+                        <p style="font-size: 1.2rem; font-family: 'Cormorant Garamond', serif; color: var(--accent-burgundy); margin-bottom: 20px;">
+                            Веселый, яркий, красочный спектакль, наполненный светом и теплом летнего солнца
+                        </p>
+                        <p style="margin-bottom: 16px;">
+                            Тут есть и бабочки, и пчелки, и даже игривый пушистый кот Красной Шапочки. Всем известная увлекательная история рассказана с юмором, песнями и играми. Но, конечно, есть и мораль о том, что детям нельзя гулять одним, а уж тем более разговаривать с волками!
+                        </p>
+                    </div>
+                    
+                    <div style="display: flex; gap: 16px; margin-top: 32px;">
+                        <a href="repertoire.html" class="btn btn-outline">Все спектакли</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- РАСПИСАНИЕ -->
+            <div class="performance-schedule">
+                <h2 style="color: var(--primary-dark); margin-bottom: 16px;">Ближайшие даты</h2>
+                <div class="schedule-grid">
+                    <div class="schedule-card">
+                        <div class="date">15 марта</div>
+                        <div class="time">12:00</div>
+                        <div style="font-size: 0.9rem; color: var(--text-gray); margin-bottom: 16px;">Воскресенье</div>
+                    </div>
+                    <div class="schedule-card">
+                        <div class="date">25 марта</div>
+                        <div class="time">12:00</div>
+                        <div style="font-size: 0.9rem; color: var(--text-gray); margin-bottom: 16px;">Вторник</div>
+                    </div>
+                    <div class="schedule-card">
+                        <div class="date">30 марта</div>
+                        <div class="time">12:00</div>
+                        <div style="font-size: 0.9rem; color: var(--text-gray); margin-bottom: 16px;">Воскресенье</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- О СПЕКТАКЛЕ -->
+            <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 48px; margin: 60px 0;">
+                <div>
+                    <h2 style="font-size: 2rem; margin-bottom: 24px;">О спектакле</h2>
+                    
+                    <h3 style="color: var(--primary-dark); margin-bottom: 16px;">Особенности постановки</h3>
+                    <ul style="margin-bottom: 32px; padding-left: 20px;">
+                        <li style="margin-bottom: 12px;">Использование тростевых кукол и кукол-марионеток</li>
+                        <li style="margin-bottom: 12px;">Оригинальные песни в исполнении актёров</li>
+                        <li style="margin-bottom: 12px;">Яркие декорации французской деревни</li>
+                        <li style="margin-bottom: 12px;">Интерактив: дети помогают Красной Шапочке собирать цветы</li>
+                    </ul>
+                    
+                    <h3 style="color: var(--primary-dark); margin-bottom: 16px;">Для кого этот спектакль</h3>
+                    <p>Спектакль идеально подходит для первого знакомства с театром. Рекомендуемый возраст: от 2 до 8 лет. Добрая история о смелости, находчивости и семейных ценностях.</p>
+                </div>
+                
+                <div>
+                    <div style="background: var(--primary-light); border-radius: var(--radius-lg); padding: 32px; color: var(--text-light);">
+                        <h3 style="color: var(--accent-gold); margin-bottom: 24px;">Информация</h3>
+                        
+                        <div style="margin-bottom: 20px; padding-bottom: 20px; border-bottom: 1px solid rgba(255,255,255,0.1);">
+                            <div style="display: flex; justify-content: space-between; margin-bottom: 12px;">
+                                <span style="color: var(--text-muted);">Режиссёр</span>
+                                <span style="font-weight: 600;">Руслан Бельский</span>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; margin-bottom: 12px;">
+                                <span style="color: var(--text-muted);">Художник</span>
+                                <span style="font-weight: 600;">-----</span>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; margin-bottom: 12px;">
+                                <span style="color: var(--text-muted);">Композитор</span>
+                                <span style="font-weight: 600;">-----</span>
+                            </div>
+                            <div style="display: flex; justify-content: space-between;">
+                                <span style="color: var(--text-muted);">Премьера</span>
+                                <span style="font-weight: 600;">15 марта 2025</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- АКТЁРСКИЙ СОСТАВ -->
+            <div style="margin: 60px 0;">
+                <h2 style="font-size: 2rem; margin-bottom: 40px;">Актёрский состав</h2>
+                
+                <div class="cast-grid">
+                    <div class="cast-member">
+                        <img src="image/actor2.jfif" alt=" Айгуль Фаттахова">
+                        <h4> Айгуль Фаттахова</h4>
+                        <p>Красная Шапочка</p>
+                    </div>
+                    <div class="cast-member">
+                        <img src="image/actor3.png" alt="Александр Степанов">
+                        <h4>Александр Степанов</h4>
+                        <p>Волк, Дровосек</p>
+                    </div>
+                    <div class="cast-member">
+                        <img src="image/actor3.png" alt="Анна Шалфеева">
+                        <h4>Анна Шалфеева</h4>
+                        <p>Бабушка</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- ОТЗЫВЫ О СПЕКТАКЛЕ -->
+            <div style="margin: 60px 0;">
+                <h2 style="font-size: 2rem; margin-bottom: 24px;">Отзывы зрителей</h2>
+                
+                <div style="background: var(--white); border-radius: var(--radius-lg); padding: 32px; box-shadow: var(--shadow-md);">
+                    <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 24px; flex-wrap: wrap; gap: 16px;">
+                        <div style="display: flex; align-items: center; gap: 16px;">
+                            <div style="width: 60px; height: 60px; border-radius: 50%; background: linear-gradient(145deg, var(--accent-gold), var(--accent-gold-dark)); display: flex; align-items: center; justify-content: center; font-size: 1.8rem; color: var(--primary-dark);">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div>
+                                <h4 style="font-size: 1.2rem; margin-bottom: 4px;">Мария Иванова</h4>
+                                <p style="color: var(--text-gray);">мама 3-летней Даши</p>
+                            </div>
+                        </div>
+                        <div style="color: var(--accent-gold); font-size: 1.1rem;">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 16px; font-style: italic; font-family: 'Cormorant Garamond', serif;">
+                        «Такой профессиональной труппы актеров-кукловодов я не встречала никогда, мне, а уж тем более Дашеньке понравилось. Вы молодцы) Обязательно придем на другие спектакли!»
+                    </p>
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <span style="color: var(--text-gray);">17 марта 2025</span>
+                        <a href="reviews.html" style="color: var(--accent-gold); text-decoration: none; font-weight: 600;">Все отзывы →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- ПОДВАЛ -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-mask"></i>
+                    </div>
+                    <div>
+                        <h3>Весёлый Маппет</h3>
+                        <p>Театр Кукол</p>
+                    </div>
+                </div>
+                
+                <div class="footer-nav">
+                    <h4 style="color: var(--accent-gold); margin-bottom: 20px;">Навигация</h4>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="repertoire.html">Репертуар</a></li>
+                        <li><a href="actors.html">Актёры</a></li>
+                        <li><a href="gallery.html">Фото</a></li>
+                        <li><a href="reviews.html">Отзывы</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contacts">
+                    <h4 style="color: var(--accent-gold); margin-bottom: 20px;">Контакты</h4>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Проспект Октября, 67/2, Уфа</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+7 (495) 123-45-67</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>info@vesely-mappet.ru</span>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 style="color: var(--accent-gold); margin-bottom: 20px;">Мы в сети</h4>
+                    <div class="footer-social">
+                        <a href="#" class="social-link"><i class="fab fa-vk"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-telegram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Театр Кукол «Весёлый Маппет». Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

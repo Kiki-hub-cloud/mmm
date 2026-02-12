@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты | Театр Кукол «Весёлый Маппет»</title>
+    
+    <!-- Шрифты -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;700&family=Raleway:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,500;1,500;1,600&family=Manrope:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- ШАПКА -->
+    <header class="main-header">
+        <div class="container">
+            <div class="header-container">
+                <div class="logo">
+                    <a href="index.html">
+                        <div class="logo-icon">
+                            <i class="fas fa-mask"></i>
+                        </div>
+                        <div class="logo-text">
+                            <h1>Весёлый Маппет</h1>
+                            <p>Театр Кукол</p>
+                        </div>
+                    </a>
+                </div>
+
+                <nav class="main-nav">
+                    <ul class="nav-list">
+                        <li><a href="index.html" class="nav-link">Главная</a></li>
+                        <li><a href="repertoire.html" class="nav-link">Репертуар</a></li>
+                        <li><a href="actors.html" class="nav-link">Актёры</a></li>
+                        <li><a href="gallery.html" class="nav-link">Фото</a></li>
+                        <li><a href="reviews.html" class="nav-link">Отзывы</a></li>
+                        <li><a href="contacts.html" class="nav-link active">Контакты</a></li>
+                    </ul>
+
+                    <div class="mobile-menu-btn">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                </nav>
+            </div>
+            
+            <div class="mobile-nav">
+                <ul class="mobile-nav-list">
+                    <li><a href="index.html" class="mobile-nav-link">Главная</a></li>
+                    <li><a href="repertoire.html" class="mobile-nav-link">Репертуар</a></li>
+                    <li><a href="actors.html" class="mobile-nav-link">Актёры</a></li>
+                    <li><a href="gallery.html" class="mobile-nav-link">Фото</a></li>
+                    <li><a href="reviews.html" class="mobile-nav-link">Отзывы</a></li>
+                    <li><a href="contacts.html" class="mobile-nav-link active">Контакты</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- ХЛЕБНЫЕ КРОШКИ -->
+    <section class="breadcrumbs">
+        <div class="container">
+            <nav class="breadcrumbs-nav">
+                <a href="index.html">Главная</a>
+                <span class="separator">/</span>
+                <span class="current">Контакты</span>
+            </nav>
+        </div>
+    </section>
+
+    <!-- ОСНОВНОЙ КОНТЕНТ -->
+    <section class="section">
+        <div class="container">
+            <h1 class="section-title" style="font-size: 3rem;">Контакты</h1>
+            <p class="section-subtitle">Свяжитесь с нами удобным способом</p>
+            
+            <!-- СЕТКА КОНТАКТОВ -->
+            <div class="contacts-grid">
+                <div>
+                    <!-- Адрес -->
+                    <div class="contact-card">
+                        <h3>
+                            <i class="fas fa-map-marker-alt"></i>
+                            Адрес театра
+                        </h3>
+                        <div class="contact-detail">
+                            <i class="fas fa-location-dot"></i>
+                            <div>
+                                <p style="font-weight: 600; color: var(--primary-dark);">Проспект Октября, 67/2</p>
+                                <p style="color: var(--text-gray);">Уфа, 125009</p>
+                                <p style="color: var(--text-gray); margin-top: 8px;"><i>Вход с главных дверей</i></p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Телефоны -->
+                    <div class="contact-card">
+                        <h3>
+                            <i class="fas fa-phone"></i>
+                            Телефоны
+                        </h3>
+                        <div class="contact-detail">
+                            <i class="fas fa-ticket"></i>
+                            <div>
+                                <p style="color: var(--text-gray);">Касса:</p>
+                                <a href="tel:+74951234567" style="font-size: 1.3rem; font-weight: 700; color: var(--primary-dark); text-decoration: none;">+7 (495) 123-45-67</a>
+                            </div>
+                        </div>
+                        <div class="contact-detail">
+                            <i class="fas fa-building"></i>
+                            <div>
+                                <p style="color: var(--text-gray);">Администрация:</p>
+                                <a href="tel:+74951234568" style="font-size: 1.1rem; color: var(--primary-dark); text-decoration: none;">+7 (495) 123-45-68</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Режим работы -->
+                    <div class="contact-card">
+                        <h3>
+                            <i class="fas fa-clock"></i>
+                            Режим работы
+                        </h3>
+                        <div class="contact-detail">
+                            <i class="fas fa-calendar"></i>
+                            <div>
+                                <p style="font-weight: 600; color: var(--primary-dark);">Спектакли:</p>
+                                <p style="color: var(--text-gray);">Сб-Вс: 11:00 – 20:00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Карта и Email -->
+                <div>
+                    <!-- Email -->
+                    <div class="contact-card">
+                        <h3>
+                            <i class="fas fa-envelope"></i>
+                            Электронная почта
+                        </h3>
+                        <div class="contact-detail">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <p style="color: var(--text-gray);">Общие вопросы:</p>
+                                <a href="mailto:info@vesely-mappet.ru" style="font-size: 1.1rem; color: var(--primary-dark); text-decoration: none;">info@vesely-mappet.ru</a>
+                            </div>
+                        </div>
+                        <div class="contact-detail">
+                            <i class="fas fa-camera"></i>
+                            <div>
+                                <p style="color: var(--text-gray);">Экскурсии:</p>
+                                <a href="mailto:excursion@vesely-mappet.ru" style="color: var(--primary-dark); text-decoration: none;">excursion@vesely-mappet.ru</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Социальные сети -->
+                    <div class="contact-card">
+                        <h3>
+                            <i class="fas fa-share-alt"></i>
+                            Мы в соцсетях
+                        </h3>
+                        <div style="display: flex; gap: 16px; margin-top: 16px;">
+                            <a href="#" style="width: 54px; height: 54px; background: #4C75A3; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.6rem; transition: var(--transition-medium);">
+                                <i class="fab fa-vk"></i>
+                            </a>
+                            <a href="#" style="width: 54px; height: 54px; background: #0088cc; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.6rem; transition: var(--transition-medium);">
+                                <i class="fab fa-telegram"></i>
+                            </a>
+                            <a href="#" style="width: 54px; height: 54px; background: #FF0000; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.6rem; transition: var(--transition-medium);">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Карта -->
+                    <div class="map-container">
+                        <img src="image/map.PNG" alt="Карта проезда">
+                    </div>
+                </div>
+            </div>
+            
+            <!-- ФОРМА ОБРАТНОЙ СВЯЗИ -->
+            <div class="contact-form-section" id="booking">
+                <h2 class="section-title" style="color: var(--text-light);">Написать нам</h2>
+                <p class="section-subtitle" style="color: var(--text-muted);">Задайте вопрос, забронируйте билеты или запишитесь на экскурсию</p>
+                
+                <form class="contact-form" id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="contactName">Ваше имя *</label>
+                            <input type="text" id="contactName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactPhone">Телефон *</label>
+                            <input type="tel" id="contactPhone" required placeholder="+7 (___) ___-__-__">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="contactTopic">Тема обращения *</label>
+                        <select id="contactTopic" required>
+                            <option value="">-- Выберите тему --</option>
+                            <option value="tickets">Бронирование билетов</option>
+                            <option value="excursion">Запись на экскурсию</option>
+                            <option value="question">Вопрос о спектакле</option>
+                            <option value="cooperation">Сотрудничество</option>
+                            <option value="other">Другое</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group" id="performanceGroup" style="display: none;">
+                        <label for="contactPerformance">Выберите спектакль</label>
+                        <select id="contactPerformance">
+                            <option value="">-- Выберите спектакль --</option>
+                            <option value="dedulya">Дедуля и Бабуля</option>
+                            <option value="krasnaya">Красная Шапочка</option>
+                            <option value="kot">Кот в сапогах</option>
+                            <option value="tri">Три поросенка</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group" id="dateGroup" style="display: none;">
+                        <label for="contactDate">Предпочтительная дата</label>
+                        <input type="date" id="contactDate">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="contactMessage">Сообщение *</label>
+                        <textarea id="contactMessage" rows="4" required placeholder="Опишите ваш вопрос или пожелание..."></textarea>
+                    </div>
+                    
+                    <div class="form-group consent">
+                        <input type="checkbox" id="contactConsent" required style="width: auto;">
+                        <label for="contactConsent" style="display: inline; color: var(--text-muted);">Я согласен на обработку персональных данных</label>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">Отправить сообщение</button>
+                </form>
+                
+                <div class="contact-success" id="contactSuccess">
+                    <i class="fas fa-check-circle"></i>
+                    <h3>Сообщение отправлено!</h3>
+                    <p>Мы получили ваше сообщение и свяжемся с вами в ближайшее время.</p>
+                </div>
+            </div>
+            
+            <!-- FAQ -->
+            <div class="faq-section">
+                <h2 class="section-title">Часто задаваемые вопросы</h2>
+                
+               
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Со скольки лет детям можно посещать спектакли?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Все наши спектакли имеют маркировку 0+ и подходят для детей любого возраста. Для самых маленьких (до 3 лет) мы рекомендуем спектакли «Колобок» и «Теремок» — они короче и динамичнее.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Проводите ли вы экскурсии по театру?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Да, мы проводим экскурсии «За кулисами театра» для групп от 5 человек. Во время экскурсии вы увидите мастерскую кукол, костюмерную, познакомитесь с разными видами кукол и даже попробуете себя в роли кукловода. Запись по телефону +7 (495) 123-45-69.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ПОДВАЛ -->
+    <footer class="main-footer">
+        <!-- Копировать из предыдущих страниц -->
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        // Скрипт для формы контактов
+        document.addEventListener('DOMContentLoaded', function() {
+            const contactTopic = document.getElementById('contactTopic');
+            const performanceGroup = document.getElementById('performanceGroup');
+            const dateGroup = document.getElementById('dateGroup');
+            
+            if (contactTopic) {
+                contactTopic.addEventListener('change', function() {
+                    const topic = this.value;
+                    
+                    if (topic === 'tickets') {
+                        performanceGroup.style.display = 'block';
+                        dateGroup.style.display = 'block';
+                    } else if (topic === 'excursion') {
+                        performanceGroup.style.display = 'none';
+                        dateGroup.style.display = 'block';
+                    } else {
+                        performanceGroup.style.display = 'none';
+                        dateGroup.style.display = 'none';
+                    }
+                });
+            }
+            
+            // Маска телефона
+            const phoneInput = document.getElementById('contactPhone');
+            if (phoneInput) {
+                phoneInput.addEventListener('input', function() {
+                    let value = this.value.replace(/\D/g, '');
+                    
+                    if (value.length > 0) {
+                        value = '+7 (' + value.substring(1);
+                        
+                        if (value.length > 7) {
+                            value = value.substring(0, 7) + ') ' + value.substring(7, 11);
+                        }
+                        if (value.length > 12) {
+                            value = value.substring(0, 12) + '-' + value.substring(12, 14);
+                        }
+                        if (value.length > 15) {
+                            value = value.substring(0, 15) + '-' + value.substring(15, 17);
+                        }
+                    }
+                    
+                    this.value = value;
+                });
+            }
+            
+            // FAQ аккордеон
+            const faqQuestions = document.querySelectorAll('.faq-question');
+            faqQuestions.forEach(question => {
+                question.addEventListener('click', function() {
+                    const item = this.parentElement;
+                    item.classList.toggle('active');
+                    
+                    faqQuestions.forEach(q => {
+                        if (q !== this && q.parentElement.classList.contains('active')) {
+                            q.parentElement.classList.remove('active');
+                        }
+                    });
+                });
+            });
+            
+            // Форма
+            const contactForm = document.getElementById('contactForm');
+            const contactSuccess = document.getElementById('contactSuccess');
+            
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    contactForm.style.display = 'none';
+                    contactSuccess.classList.add('active');
+                    
+                    setTimeout(() => {
+                        contactForm.style.display = 'block';
+                        contactSuccess.classList.remove('active');
+                        contactForm.reset();
+                        performanceGroup.style.display = 'none';
+                        dateGroup.style.display = 'none';
+                    }, 5000);
+                });
+            }
+        });
+    </script>
+</body>
+</html>

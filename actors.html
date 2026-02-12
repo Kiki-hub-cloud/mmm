@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Актёры | Театр Кукол «Весёлый Маппет»</title>
+    
+    <!-- Шрифты -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;700&family=Raleway:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,500;1,500;1,600&family=Manrope:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- ===== ШАПКА — ЕДИНАЯ ДЛЯ ВСЕХ СТРАНИЦ ===== -->
+    <!-- ВАЖНО: active класс стоит на "Актёры" -->
+    <header class="main-header">
+        <div class="container">
+            <div class="header-container">
+                <div class="logo">
+                    <a href="index.html">
+                        <div class="logo-icon">
+                            <i class="fas fa-mask"></i>
+                        </div>
+                        <div class="logo-text">
+                            <h1>Весёлый Маппет</h1>
+                            <p>Театр Кукол</p>
+                        </div>
+                    </a>
+                </div>
+
+                <nav class="main-nav">
+                    <ul class="nav-list">
+                        <li><a href="index.html" class="nav-link">Главная</a></li>
+                        <li><a href="repertoire.html" class="nav-link">Репертуар</a></li>
+                        <li><a href="actors.html" class="nav-link active">Актёры</a></li>
+                        <li><a href="gallery.html" class="nav-link">Фото</a></li>
+                        <li><a href="reviews.html" class="nav-link">Отзывы</a></li>
+                        <li><a href="contacts.html" class="nav-link">Контакты</a></li>
+                    </ul>
+
+                    <div class="mobile-menu-btn">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                </nav>
+            </div>
+            
+            <!-- Мобильная навигация -->
+            <div class="mobile-nav">
+                <ul class="mobile-nav-list">
+                    <li><a href="index.html" class="mobile-nav-link">Главная</a></li>
+                    <li><a href="repertoire.html" class="mobile-nav-link">Репертуар</a></li>
+                    <li><a href="actors.html" class="mobile-nav-link active">Актёры</a></li>
+                    <li><a href="gallery.html" class="mobile-nav-link">Фото</a></li>
+                    <li><a href="reviews.html" class="mobile-nav-link">Отзывы</a></li>
+                    <li><a href="contacts.html" class="mobile-nav-link">Контакты</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- ХЛЕБНЫЕ КРОШКИ -->
+    <section class="breadcrumbs">
+        <div class="container">
+            <nav class="breadcrumbs-nav">
+                <a href="index.html">Главная</a>
+                <span class="separator">/</span>
+                <span class="current">Актёры</span>
+            </nav>
+        </div>
+    </section>
+
+    <!-- ОСНОВНОЙ КОНТЕНТ -->
+    <section class="section">
+        <div class="container">
+            <h1 class="section-title" style="font-size: 3rem;">Наша труппа</h1>
+            <p class="section-subtitle">Профессионалы, дарящие жизнь куклам</p>
+            
+            <!-- РЕЖИССЁР -->
+            <div style="display: grid; grid-template-columns: 300px 1fr; gap: 48px; background: var(--white); border-radius: var(--radius-lg); padding: 48px; margin-bottom: 80px; box-shadow: var(--shadow-md);">
+                <div style="border-radius: var(--radius-lg); overflow: hidden;">
+                    <img src="image/actor1.jfif" alt="Руслан Бельский" style="width: 100%; height: 100%; aspect-ratio: 3/4; object-fit: cover;">
+                </div>
+                <div>
+                    <span style="background: var(--accent-gold); color: var(--primary-dark); padding: 8px 20px; border-radius: 30px; font-size: 0.9rem; font-weight: 600; display: inline-block; margin-bottom: 16px;">ХУДОЖЕСТВЕННЫЙ РУКОВОДИТЕЛЬ</span>
+                    <h2 style="font-size: 2.5rem; color: var(--primary-dark); margin-bottom: 8px;">Руслан Бельский</h2>
+                    <p style="font-size: 1.3rem; color: var(--accent-burgundy); margin-bottom: 24px; font-family: 'Cormorant Garamond', serif;">Режиссёр-постановщик</p>
+                    <div style="margin-bottom: 24px;">
+                        <p style="margin-bottom: 16px; line-height: 1.8;">Главный по созданию интересных постановок.</p>
+                        <p style="margin-bottom: 16px; line-height: 1.8;"></p>
+                    </div>
+                    <div>
+                        <h3 style="color: var(--accent-gold); margin-bottom: 16px;">Избранные постановки:</h3>
+                        <div style="display: flex; gap: 16px; flex-wrap: wrap;">
+                            <span style="background: var(--gray-light); padding: 8px 20px; border-radius: 30px; font-size: 0.95rem;">Дедуля и Бабуля</span>
+                            <span style="background: var(--gray-light); padding: 8px 20px; border-radius: 30px; font-size: 0.95rem;">Красная Шапочка</span>
+                            <span style="background: var(--gray-light); padding: 8px 20px; border-radius: 30px; font-size: 0.95rem;">Кот в сапогах</span>
+                            <span style="background: var(--gray-light); padding: 8px 20px; border-radius: 30px; font-size: 0.95rem;">Три поросенка</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- ЗАГОЛОВОК АКТЁРЫ -->
+            <h2 style="font-size: 2.2rem; margin-bottom: 48px; color: var(--primary-dark); position: relative;">
+                Актёры-кукловоды
+                <span style="position: absolute; bottom: -12px; left: 0; width: 80px; height: 3px; background: var(--accent-gold);"></span>
+            </h2>
+            
+            <!-- 3D-КАРТОЧКИ АКТЁРОВ -->
+            <div class="actors-grid">
+                <!-- Айгуль Фаттахова -->
+                <div class="actor-3d-card">
+                    <div class="actor-card-inner">
+                        <div class="actor-card-front">
+                            <div class="card-image">
+                                <img src="image/actor2.jfif" alt="Айгуль Фаттахова">
+                            </div>
+                            <div class="card-content">
+                                <h3>Айгуль Фаттахова</h3>
+                                <p>Первый актер нашего театра</p>
+                            </div>
+                        </div>
+                        <div class="actor-card-back">
+                            <h3>Айгуль Фаттахова</h3>
+                            <p>В театре с 2023 года</p>
+                            <p>Любимые роли: Бабушка.</p>
+                            <div class="actor-stats">
+                                <span>2 лет</span>
+                                <span>5+ ролей</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Анна Шалфеева -->
+                <div class="actor-3d-card">
+                    <div class="actor-card-inner">
+                        <div class="actor-card-front">
+                            <div class="card-image">
+                                <img src="image/actor3.png" alt="ДАнна Шалфеева">
+                            </div>
+                            <div class="card-content">
+                                <h3>Анна Шалфеева</h3>
+                                <p>Актёр-кукловод</p>
+                            </div>
+                        </div>
+                        <div class="actor-card-back">
+                            <h3>Анна Шалфеева</h3>
+                            <p>В театре с 2023 года. </p>
+                            <p>Мастер сложных кукол и трюков. Создаёт кукол для спектаклей.</p>
+                            <div class="actor-stats">
+                                <span>7 лет</span>
+                                <span>20+ ролей</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Александр Степанов -->
+                <div class="actor-3d-card">
+                    <div class="actor-card-inner">
+                        <div class="actor-card-front">
+                            <div class="card-image">
+                                <img src="image/actor3.png" alt="Александр Степанов">
+                            </div>
+                            <div class="card-content">
+                                <h3>Александр Степанов</h3>
+                                <p>Актер-кукловод</p>
+                            </div>
+                        </div>
+                        <div class="actor-card-back">
+                            <h3>Александр Степанов</h3>
+                            <p>В театре с 2021 года. </p>
+                            <p>Обладает уникальным голосом для озвучки персонажей.</p>
+                            <div class="actor-stats">
+                                <span>4 года</span>
+                                <span>15+ ролей</span>
+                            </div>
+                        </div>
+                    </div>
+                </div
+            </div>
+        </div>
+    </section>
+            <div style="background: linear-gradient(135deg, var(--primary-dark), var(--primary-light)); border-radius: var(--radius-lg); padding: 48px; margin-top: 80px; color: var(--text-light); display: grid; grid-template-columns: 1fr 1fr; gap: 48px;">
+                <div>
+                    <h3 style="color: var(--accent-gold); font-size: 1.8rem; margin-bottom: 24px;">О нашей труппе</h3>
+                    <p style="margin-bottom: 16px; line-height: 1.8;">В театре «Весёлый Маппет» работают 3 актёров-кукловодов. Каждый из них — универсальный артист, владеющий различными системами кукол: от перчаточных до марионеток.</p>
+                    <p style="margin-bottom: 16px; line-height: 1.8;">Наши актёры регулярно повышают квалификацию, участвуют в мастер-классах ведущих кукольников России и Европы.</p>
+                </div>
+                <div>
+                    <h3 style="color: var(--accent-gold); font-size: 1.8rem; margin-bottom: 24px;">Достижения</h3>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="margin-bottom: 16px; display: flex; align-items: center; gap: 12px;">
+                            <i class="fas fa-trophy" style="color: var(--accent-gold);"></i>
+                            <span>Лауреаты премии «Золотая маска» (2018, 2021)</span>
+                        </li>
+                        <li style="margin-bottom: 16px; display: flex; align-items: center; gap: 12px;">
+                            <i class="fas fa-award" style="color: var(--accent-gold);"></i>
+                            <span>Гран-при фестиваля «Театр кукол без границ» (2023)</span>
+                        </li>
+                        <li style="margin-bottom: 16px; display: flex; align-items: center; gap: 12px;">
+                            <i class="fas fa-medal" style="color: var(--accent-gold);"></i>
+                            <span>Лучший детский спектакль года (2024)</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ПОДВАЛ — ПОЛНОСТЬЮ ИДЕНТИЧНЫЙ ДРУГИМ СТРАНИЦАМ -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-mask"></i>
+                    </div>
+                    <div>
+                        <h3>Весёлый Маппет</h3>
+                        <p>Театр Кукол</p>
+                    </div>
+                </div>
+                
+                <div class="footer-nav">
+                    <h4 style="color: var(--accent-gold); margin-bottom: 20px;">Навигация</h4>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="repertoire.html">Репертуар</a></li>
+                        <li><a href="actors.html">Актёры</a></li>
+                        <li><a href="gallery.html">Фото</a></li>
+                        <li><a href="reviews.html">Отзывы</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contacts">
+                    <h4 style="color: var(--accent-gold); margin-bottom: 20px;">Контакты</h4>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Проспект Октября, 67/2, Уфа</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+7 (495) 123-45-67</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>info@vesely-mappet.ru</span>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 style="color: var(--accent-gold); margin-bottom: 20px;">Мы в сети</h4>
+                    <div class="footer-social">
+                        <a href="#" class="social-link"><i class="fab fa-vk"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-telegram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Театр Кукол «Весёлый Маппет». Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
